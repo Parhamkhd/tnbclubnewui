@@ -32,6 +32,14 @@ scroll-behavior: smooth;
     cursor:pointer !important;
 }
 
+
+#footer-image{
+
+    background-image: url(../images/dark3.jpg);
+}
+
+
+
 #index header a:hover{
     color:white;
 }
@@ -943,10 +951,6 @@ footer{
 
 
 
-#footer-image{
-
-    background-image: url(/assets/images/dark3.jpg);
-}
 
 .footer-content{
     display: inline-block;
