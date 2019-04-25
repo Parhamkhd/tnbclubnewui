@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit-rtl.min.css" />
     <!-- <link rel="stylesheet" href="css/fonts.css" /> -->
     <!-- <link rel="stylesheet" href="css/color.css" /> -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
 
@@ -35,13 +39,13 @@
             scrollFunction()
         };
 
-        // function scrollFunction() {
-        //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        //         document.getElementById("myBtn").style.display = "block";
-        //     } else {
-        //         document.getElementById("myBtn").style.display = "none";
-        //     }
-        // }
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
 
         // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
@@ -91,7 +95,7 @@
 
         <header>
 
-            <a onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/images/up-arrow.svg" alt=""></a>
+            <a onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/images/up-arrow2.svg" alt=""></a>
 
             <div class="" id="logo"> <a href="index.html" id="logo-link"><h1 id="logo-text">TNBCLUB</h1></a> </div>
 
@@ -299,7 +303,7 @@
         
         <div class="advertise">
             <div class="innerAdvertise">
-                    <h2>هدف ما </h2>
+                    <h2 data-aos="fade-down">هدف ما </h2>
                     <p>باشگاه برنامه‌نویسی دانشجویی تهران شمال با برگزاری مسابقات با رویکرد شناخت و پرورش دانشجویان با انگیزه، توانمند و با استعداد در زمینه‌های برنامه‌نویسی و طراحی الگوریتم برای معرفی استعداد های جوان تلاش می‌کند.</p>
         
             </div>
@@ -662,6 +666,52 @@
             
             
             </script>
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+
+
+
+<script>
+
+AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+    
+  
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: true, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  
+  });
+
+
+
+</script>
+
+
+
+
+
+
 </body>
 
 </html>
