@@ -1678,6 +1678,21 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.548);
 }
 
 
+.hosts-round{
+    display: inline-block;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-position:50% 50%;
+    background-repeat:no-repeat;  
+    background-image: url(../images/azadlogo.png);
+    background-size: 75px;
+}
+
+
+
+
 @media only screen and (max-width: 1320px) {
 
     nav{
